@@ -1,0 +1,11 @@
+How to use?
+1) Set the vm.max_map_count: https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html
+2) docker-compose build
+3) docker-compose up
+4) Check out https://pypi.python.org/pypi/python-logstash and use the code shown in there. TCP connections are accepted at port 5005, UDP at 5006
+4.5) Drop some log messages (important for step 5)
+5) Go to localhost:5601, log in as elastic/changeme
+6) Click on Discover, pick @timestamp as the time event and click create.
+
+Voila, you can play now.
+
